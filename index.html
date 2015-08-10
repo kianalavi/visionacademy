@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Test</title>
+  <title>Vision Academy</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -31,13 +48,14 @@
 
           <ul class="nav navbar-nav navbar-right">
 
-            <li><a href="#">About</a></li>
-            <li><a href="#">Donate</a></li>
+            <li><a href="about.html" data-toggle="modal" data-target=".about-modal-lg">About</a></li>
+            <li><a href="https://npo.justgive.org/nonprofits/donate.jsp?ein=94-3154078">Donate</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Phone</a></li>
                 <li><a href="#">Email</a></li>
+                <li><a href="#">Map</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Good Samaritan FRC</a></li>
@@ -53,7 +71,13 @@
     <!-- Page header -->
     <div class="page-header text-center">
       <p class="lead">
-        Mission statement. Link to <a href="#">Good Samaritan</a>
+        A program of the <a href="http://www.goodsamfrc.org">Good Samaritan Family Resource Center</a>, Vision Academy provides afterschool programs, summer camp, chess instruction, and general support services to underserved children, youth and families in San Francisco.
+        <br>
+        <span class="glyphicon glyphicon-heart" aria-hidden="true" id="heart-margins"></span>
+        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+        <br>
+        Our work focuses on promoting the growth of emotional, social and achievement intelligences in each participant.
       </p>
     </div>
 
@@ -86,8 +110,8 @@
               <img data-src="holder.js/100%x200" alt="100%x200" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" data-holder-rendered="true" style="display: block;">
               <div class="caption">
                 <h3>Afterschool</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <div class="text-center"><p><a href="#" class="btn btn-default" role="button">Learn More</a></p></div>
+                <p>In partnership with <a href="http://www.calvaryhillsf.com">Calvary Hill Community Church</a>, we offer afterschool programming with transportation to youth 5 - 13 years of age. The structure is homework first, followed by snack, chess, art, computer literacy, and outdoor play.</p>
+                <div class="text-center"><p><a href="#" class="btn btn-default" role="button">Request More Info</a></p></div>
               </div>
             </div>
           </div>
@@ -98,8 +122,8 @@
               <img data-src="holder.js/100%x200" alt="100%x200" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" data-holder-rendered="true" style="display: block;">
               <div class="caption">
                 <h3>Chess Clubs</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <div class="text-center"><p><a href="#" class="btn btn-default" role="button">Learn More</a></p></div>
+                <p>We provide chess club services to many wonderful schools and organizations here in San Francisco. Our curriculum was developed in-house to be engaging and fun, all while imparting the cognitive and social benefits of chess.</p>
+                <div class="text-center"><p><a href="#" class="btn btn-default" role="button">Request More Info</a></p></div>
               </div>
             </div>
           </div>
@@ -110,7 +134,19 @@
               <img data-src="holder.js/100%x200" alt="100%x200" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" data-holder-rendered="true" style="display: block;">
               <div class="caption">
                 <h3>Summer Camp</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p>Our summer camp is a safe and enriching place for San Francisco children and youth. Activities include, chess, field trips, cognitive games, arts and crafts, daily reading, mindfulness, meditation, computer programming and more.</p>
+                <div class="text-center"><p><a href="#" class="btn btn-default" role="button">Learn More</a></p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volunteer -->
+          <div class="col-sm-6 col-md-12">
+            <div class="thumbnail">
+              <img data-src="holder.js/100%x200" alt="100%x200" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" data-holder-rendered="true" style="display: block;">
+              <div class="caption">
+                <h3>Volunteers!</h3>
+                <p>Want to make a difference? Then volunteer and tutor with us! No experience necessary, just have a passion for working with kids, and an eagerness to nurture a joy in learning! We are always looking for enthusiastic tutors who can work weekly. </p>
                 <div class="text-center"><p><a href="#" class="btn btn-default" role="button">Learn More</a></p></div>
               </div>
             </div>
@@ -118,16 +154,175 @@
 
         </div>
     </div>
-      <!-- End services -->
+    <!-- End services -->
+
+
+    <!-- Modal About -->
+      <div class="modal fade about-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title" id="myLargeModalLabel">About Vision Academy</h4>
+            </div>
+            <div class="modal-body">
+              <h5>Program Overview</h5>
+              <p>Founded in 2011, Vision Academy has increased access to summer and afterschool programs for children and youth in the Bayview and Mission districts of San Francisco.</p>
+
+              <p>Our program works largely with African-American and Latino youth, providing education and enrichment programming designed to support their academic needs and bridge any achievement gaps.</p>
+
+              <p>Presently, Vision Academy conducts a community-based afterschool program providing tri-lingual homework assistance (English / Spanish / Chinese) with an emphasis on mathematics and literacy, specialized chess instruction services delivered to partner afterschool programs, and a comprehensive summer day-camp designed to prevent summer learning loss.</p>
+
+              <p>To ensure successful outcomes for each participant, our program and staff works diligently to engage and collaborate with parents, teachers, volunteers, PTAs, schools, churches, other afterschool programs, and family service agencies.</p>
+
+              <p>In the summer of 2015, Vision Academy became an official program of the Good Samaritan Family Resource Center.
+              </p>
+
+              <hr>
+              <!-- Advisory Board Bios -->
+              <h5>Advisory Board</h5>
+              <p>We are thankful to the following community champions for their service on our Advisory Board.</p>
+              <div class="media">
+                <!-- Mario Paz bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Mario Paz</h4>
+                  About Mario
+                </div>
+              </div>
+
+              <div class="media">
+                <!-- Dr. Bryant bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Dr. Joseph Bryant Jr.</h4>
+                  About Dr. Bryant
+                </div>
+              </div>
+
+              <div class="media">
+                <!-- Laura Cho bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Laura Che</h4>
+                  About Laura
+                </div>
+              </div>
+
+              <div class="media">
+                <!-- Shamann Walton bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Shamann Walton</h4>
+                  About Shamann
+                </div>
+              </div>
+
+              <div class="media">
+                <!-- Mark Slee bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Mark Slee</h4>
+                  About Mark
+                </div>
+              </div>
+
+              <hr>
+              <!-- Staff bio -->
+              <h5>Vision Academy Staff</h5>
+
+              <div class="media">
+                <!-- Kian Alavi bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Kian Alavi</h4>
+                  About Kian
+                </div>
+              </div>
+
+              <div class="media">
+                <!-- Judy Jue bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Judy Jue</h4>
+                  About Judy
+                </div>
+              </div>
+
+              <div class="media">
+                <!-- Tenny Ma bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Tenny Ma</h4>
+                  About Tenny
+                </div>
+              </div>
+
+              <div class="media">
+                <!-- Chris Ramirez bio -->
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="http://media2.fdncms.com/sfexaminer/imager/check-mates-cameron-smith-left-plays-chess-with-tutor-kian-alavi-as-brit/u/original/2315631/sf.chess2_.1124.jpg" style="width: 64px; height: 64px;">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Chris Ramirez</h4>
+                  About Chris
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Modal About -->
 <footer class="va-footer">
-  <p>Good Samaritan Mission Statement</p>
-  <p>Program Mission Statement</p>
-  <p>Made with <span class="sr-only">love</span><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by <a href="http://www.twitter.com/kianalavi">@kianalavi.</a>
+  <p><strong>About Good Samaritan Family Resource Center</strong></p>
+  <p class="text-justify">Good Samaritan Family Resource Center believes that strong families are vital to raising children who are happy, healthy, and productive. Good Samaritan comprehensively addresses the needs of low-income Latino immigrant families through a Two-Generation Strategy that involves children and their parents/caregivers. Our services ensure that children have access to the educational and development opportunities they deserve to succeed in life, and equip parents with the confidence, knowledge, and tools to support their children’s success. We foster community connections, help participants to develop English language and parenting skills, and build a foundation for creating resilient and self-sufficient families.</p>
+  <br>
+  <p>Made with <span class="sr-only">love</span><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by VA Founder and Director<a href="http://www.twitter.com/kianalavi"> @kianalavi.</a>
  </p>
   <ul class="text-muted">
-    <li><a href="#">Good Samaritan</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Donate</a></li>
+    <li><a href="#">Connect to Good Samaritan</a></li>
+    <li>·</li>
+    <li><a href="about.html" data-toggle="modal" data-target=".about-modal-lg">About Vision Academy</a></li>
+    <li>·</li>
+    <li><a href="https://npo.justgive.org/nonprofits/donate.jsp?ein=94-3154078">Make a Donation</a></li>
 
   </ul>
 </footer>
