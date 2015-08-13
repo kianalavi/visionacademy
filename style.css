@@ -33,3 +33,7 @@
 .va-footer p {
   margin-bottom: 0px;
 }
+
+div .item img {
+  width: 100%;
+}
